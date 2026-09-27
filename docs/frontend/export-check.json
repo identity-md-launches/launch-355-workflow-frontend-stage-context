@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-27T06:44:20.938Z",
+  "result": "passed",
+  "assets": 6,
+  "assetBytes": 575516,
+  "manifestBytes": 3344,
+  "sourceCommit": "fb1d145d61b1c427f180f852ba60ddab5840e44f",
+  "abiHashesVerified": true,
+  "networkUnchanged": true,
+  "completeAssetInventory": true,
+  "relativeBase": true
+}

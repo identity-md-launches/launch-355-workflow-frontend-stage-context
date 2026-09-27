@@ -1,0 +1,44 @@
+[
+  {
+    "selector": "body",
+    "color": "rgb(38, 52, 43)",
+    "background": "rgba(0, 0, 0, 0)",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "16px"
+  },
+  {
+    "selector": ".quiet",
+    "color": "rgb(87, 97, 88)",
+    "background": "rgba(0, 0, 0, 0)",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "13px"
+  },
+  {
+    "selector": ".primary",
+    "color": "rgb(38, 52, 43)",
+    "background": "rgb(195, 219, 168)",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "16px"
+  },
+  {
+    "selector": ".burn",
+    "color": "rgb(38, 52, 43)",
+    "background": "rgb(228, 235, 220)",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "16px"
+  },
+  {
+    "selector": ".error",
+    "color": "rgb(148, 61, 48)",
+    "background": "rgba(0, 0, 0, 0)",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "14px"
+  },
+  {
+    "selector": ".current",
+    "color": "rgb(38, 52, 43)",
+    "background": "rgb(228, 235, 220)",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "13px"
+  }
+]

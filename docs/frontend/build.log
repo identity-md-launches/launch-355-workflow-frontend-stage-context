@@ -1,0 +1,21 @@
+
+> tiers-sepolia@1.0.0 build
+> npm run typecheck && node scripts/prepare.mjs && vite build && node scripts/manifest.mjs
+
+
+> tiers-sepolia@1.0.0 typecheck
+> tsc --noEmit
+
+Verified TIER: 38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee
+Verified LoyaltyTierHook: 2b055d178e44e04a5eade61e4ea7f490d295c2d2b98190a3d2dec78fa7d4d7d9
+vite v7.1.7 building for production...
+transforming...
+✓ 699 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                   0.65 kB │ gzip:   0.41 kB
+../dist/assets/index-jHIg2QLm.css   12.45 kB │ gzip:   3.38 kB
+../dist/assets/ccip-CAzocEno.js      2.61 kB │ gzip:   1.23 kB
+../dist/assets/index-Mr1eHdjA.js   542.85 kB │ gzip: 168.62 kB
+✓ built in 3.49s
+Manifest: 6 assets, 575516 bytes

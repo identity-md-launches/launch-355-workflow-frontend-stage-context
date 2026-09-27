@@ -1,0 +1,124 @@
+{
+  "at": "2026-09-27T06:44:35.144Z",
+  "browser": "154.0.8037.0",
+  "urlPath": "/preview/",
+  "checks": [
+    {
+      "name": "Relative export, disconnected state and runtime ABI loading",
+      "result": "passed"
+    },
+    {
+      "name": "Wallet rejection is recoverable",
+      "result": "passed"
+    },
+    {
+      "name": "Connect, wrong chain, add unknown chain then switch",
+      "result": "passed"
+    },
+    {
+      "name": "Live wallet standing, pre-swap fee and volume remaining",
+      "result": "passed"
+    },
+    {
+      "name": "Invalid amount, precision validation and focus",
+      "result": "passed"
+    },
+    {
+      "name": "Buy quote carries identity and request amount",
+      "result": "passed"
+    },
+    {
+      "name": "Quote invalidates on edits",
+      "result": "passed"
+    },
+    {
+      "name": "Simulation rejection prevents wallet transaction",
+      "result": "passed"
+    },
+    {
+      "name": "Buy simulation, exact native value, pending and confirmed receipt",
+      "result": "passed"
+    },
+    {
+      "name": "Sell approval is separate, exact and targets assigned router",
+      "result": "passed"
+    },
+    {
+      "name": "Sell simulation, zero native value and wallet rejection",
+      "result": "passed"
+    },
+    {
+      "name": "Burn consent and permissionless burn transaction",
+      "result": "passed"
+    },
+    {
+      "name": "Account changes invalidate quote and refresh standing",
+      "result": "passed"
+    },
+    {
+      "name": "Zero active liquidity still allows quoting a reachable range",
+      "result": "passed"
+    },
+    {
+      "name": "Missing code blocks transactions and retry recovers",
+      "result": "passed"
+    },
+    {
+      "name": "Manager mismatch blocks transactions",
+      "result": "passed"
+    },
+    {
+      "name": "RPC chain mismatch blocks transactions",
+      "result": "passed"
+    },
+    {
+      "name": "Event decoding, pool filtering and bounded block windows",
+      "result": "passed"
+    },
+    {
+      "name": "Smart account reads remain available and direct swaps are disabled",
+      "result": "passed"
+    },
+    {
+      "name": "RPC outage disables actions and recovers",
+      "result": "passed"
+    },
+    {
+      "name": "Quote revert error with recovery",
+      "result": "passed"
+    },
+    {
+      "name": "Receipt revert is reported",
+      "result": "passed"
+    },
+    {
+      "name": "Quote expiry blocks transaction",
+      "result": "passed"
+    },
+    {
+      "name": "Desktop and mobile reflow, keyboard focus, reduced motion and accessibility",
+      "result": "passed"
+    },
+    {
+      "name": "No failed static resources or uncaught browser errors",
+      "result": "passed"
+    },
+    {
+      "name": "Keyboard-only wallet connection, chain switch and quote form",
+      "result": "passed"
+    },
+    {
+      "name": "ABI tampering stops configuration loading",
+      "result": "passed"
+    },
+    {
+      "name": "Missing browser wallet gives installation guidance",
+      "result": "passed"
+    }
+  ],
+  "failures": [],
+  "transactionsMocked": 5,
+  "realTransactions": 0,
+  "pageErrors": [],
+  "badResources": []
+}

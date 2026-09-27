@@ -1,0 +1,44 @@
+[
+  {
+    "selector": "h1",
+    "foreground": "rgb(38, 52, 43)",
+    "background": "rgb(245, 243, 236)",
+    "ratio": 11.76
+  },
+  {
+    "selector": "h1 span",
+    "foreground": "rgb(51, 92, 57)",
+    "background": "rgb(245, 243, 236)",
+    "ratio": 6.93
+  },
+  {
+    "selector": ".quiet",
+    "foreground": "rgb(87, 97, 88)",
+    "background": "rgb(252, 251, 247)",
+    "ratio": 6.23
+  },
+  {
+    "selector": ".primary",
+    "foreground": "rgb(38, 52, 43)",
+    "background": "rgb(195, 219, 168)",
+    "ratio": 8.72
+  },
+  {
+    "selector": ".burn p",
+    "foreground": "rgb(87, 97, 88)",
+    "background": "rgb(228, 235, 220)",
+    "ratio": 5.29
+  },
+  {
+    "selector": ".error",
+    "foreground": "rgb(148, 61, 48)",
+    "background": "rgb(252, 251, 247)",
+    "ratio": 6.83
+  },
+  {
+    "selector": ".current",
+    "foreground": "rgb(38, 52, 43)",
+    "background": "rgb(228, 235, 220)",
+    "ratio": 10.7
+  }
+]

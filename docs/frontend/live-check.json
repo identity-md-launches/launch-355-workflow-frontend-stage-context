@@ -1,0 +1,277 @@
+{
+  "checkedAt": "2026-09-27T06:36:42.749Z",
+  "poolId": "0x14fee65af69b83594081174ae11f2bfbe9b16cee1bb1c31d82fba8ac9d94f231",
+  "broadcast": false,
+  "verification": "passed",
+  "snapshot": {
+    "block": "11791541",
+    "time": 1790491003727,
+    "price": "560227709747861399187319382274582",
+    "liquidity": "0",
+    "lpFee": 3000,
+    "fees": "0",
+    "thresholds": [
+      "10000000000000000",
+      "100000000000000000",
+      "1000000000000000000"
+    ],
+    "decimals": 18,
+    "symbol": "TIER",
+    "volume": "0",
+    "tier": 0,
+    "bps": 100,
+    "next": "0",
+    "balance": "0",
+    "eth": "0",
+    "allowance": "0",
+    "contractWallet": false
+  },
+  "activity": {
+    "from": "11791391",
+    "to": "11791541",
+    "items": []
+  },
+  "poolSeed": [
+    {
+      "eventName": "ModifyLiquidity",
+      "args": {
+        "id": "0x14fee65af69b83594081174ae11f2bfbe9b16cee1bb1c31d82fba8ac9d94f231",
+        "sender": "0xa6b1728c29Eb4300e306B63F5C7eC2eDFc2eF7C5",
+        "tickLower": -887220,
+        "tickUpper": 177240,
+        "liquidityDelta": "113387377674367368214378",
+        "salt": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "topics": [
+        "0xf208f4912782fd25c7f114ca3723a2d5dd6f3bcc3ac8db5af63baa85f711d5ec",
+        "0x14fee65af69b83594081174ae11f2bfbe9b16cee1bb1c31d82fba8ac9d94f231",
+        "0x000000000000000000000000a6b1728c29eb4300e306b63f5c7ec2edfc2ef7c5"
+      ],
+      "data": "0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff2764c000000000000000000000000000000000000000000000000000000000002b458000000000000000000000000000000000000000000001802bdf7aac35c8cb76a0000000000000000000000000000000000000000000000000000000000000000",
+      "blockNumber": "11791391",
+      "transactionHash": "0x1dec1ee3b5e6d10e4da894ff81512728a2a73c986a4a6dba2ee54feea9b11a33",
+      "transactionIndex": 179,
+      "blockHash": "0x6783896c9d915534ea68b46ba9164740ee5d39c3dcac116a166cd0c675535c2b",
+      "blockTimestamp": "0x6ab8b0a4",
+      "logIndex": 203,
+      "removed": false
+    }
+  ],
+  "readOnlyBuyQuote": {
+    "result": [
+      "49133859246231437308",
+      "153264"
+    ],
+    "request": {
+      "abi": [
+        {
+          "name": "quoteExactInputSingle",
+          "type": "function",
+          "stateMutability": "nonpayable",
+          "inputs": [
+            {
+              "type": "tuple",
+              "name": "params",
+              "components": [
+                {
+                  "type": "tuple",
+                  "name": "poolKey",
+                  "components": [
+                    {
+                      "type": "address",
+                      "name": "currency0"
+                    },
+                    {
+                      "type": "address",
+                      "name": "currency1"
+                    },
+                    {
+                      "type": "uint24",
+                      "name": "fee"
+                    },
+                    {
+                      "type": "int24",
+                      "name": "tickSpacing"
+                    },
+                    {
+                      "type": "address",
+                      "name": "hooks"
+                    }
+                  ]
+                },
+                {
+                  "type": "bool",
+                  "name": "zeroForOne"
+                },
+                {
+                  "type": "uint128",
+                  "name": "exactAmount"
+                },
+                {
+                  "type": "bytes",
+                  "name": "hookData"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "type": "uint256",
+              "name": "amountOut"
+            },
+            {
+              "type": "uint256",
+              "name": "gasEstimate"
+            }
+          ]
+        }
+      ],
+      "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "args": [
+        {
+          "poolKey": {
+            "currency0": "0x0000000000000000000000000000000000000000",
+            "currency1": "0xb0d54e89c5a7888446c1ab93f12ace3054c847c7",
+            "fee": 3000,
+            "tickSpacing": 60,
+            "hooks": "0xe76584b68c415026026e9fb4e5034be3f96000cc"
+          },
+          "zeroForOne": true,
+          "exactAmount": "1000000000000",
+          "hookData": "0x0000000000000000000000001111111111111111111111111111111111111111"
+        }
+      ],
+      "functionName": "quoteExactInputSingle",
+      "account": {
+        "address": "0x1111111111111111111111111111111111111111",
+        "type": "json-rpc"
+      },
+      "blockNumber": "11791541"
+    }
+  },
+  "readOnlyBuySimulation": {
+    "result": "-340282366920938463463374607431719077596753768562692",
+    "amountIn": "1000000000000",
+    "priceMovementBps": 50,
+    "accountBalanceOverride": "1000000000000000000",
+    "broadcast": false
+  },
+  "attempts": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_chainId",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getLogs",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getLogs",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_call",
+      "success": true
+    }
+  ]
+}

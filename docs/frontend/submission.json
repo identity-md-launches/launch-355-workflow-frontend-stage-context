@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-27T06:45:12.817268+00:00",
+  "sourceCommit": "fb1d145d61b1c427f180f852ba60ddab5840e44f",
+  "allowedPathsOnly": true,
+  "protectedSourceUnchanged": true,
+  "submodules": 0,
+  "dependencyOrCacheFiles": 0,
+  "newDeliveryFileCountBeforeThisReport": 51,
+  "newDeliveryBytesBeforeThisReport": 2414710,
+  "exportBytes": 578860,
+  "bundleLimitBytes": 8388608,
+  "bundleVerification": "A temporary Git repository under test/scratch is used to construct and measure the complete bundle without changing read-only working-repository metadata.",
+  "workingRepositoryCommit": "blocked: .git/index.lock could not be created because Git metadata is read-only",
+  "preflightCompleteBundleBytes": 1656171,
+  "preflightBundleWithinLimit": true,
+  "finalBundleVerification": "Bundle regenerated after recording this preflight value and checked again against the limit. Working repository remains uncommitted."
+}

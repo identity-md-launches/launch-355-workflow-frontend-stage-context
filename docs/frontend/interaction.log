@@ -1,0 +1,32 @@
+
+> tiers-sepolia@1.0.0 test
+> node scripts/interaction.mjs
+
+PASS Relative export, disconnected state and runtime ABI loading
+PASS Wallet rejection is recoverable
+PASS Connect, wrong chain, add unknown chain then switch
+PASS Live wallet standing, pre-swap fee and volume remaining
+PASS Invalid amount, precision validation and focus
+PASS Buy quote carries identity and request amount
+PASS Quote invalidates on edits
+PASS Simulation rejection prevents wallet transaction
+PASS Buy simulation, exact native value, pending and confirmed receipt
+PASS Sell approval is separate, exact and targets assigned router
+PASS Sell simulation, zero native value and wallet rejection
+PASS Burn consent and permissionless burn transaction
+PASS Account changes invalidate quote and refresh standing
+PASS Zero active liquidity still allows quoting a reachable range
+PASS Missing code blocks transactions and retry recovers
+PASS Manager mismatch blocks transactions
+PASS RPC chain mismatch blocks transactions
+PASS Event decoding, pool filtering and bounded block windows
+PASS Smart account reads remain available and direct swaps are disabled
+PASS RPC outage disables actions and recovers
+PASS Quote revert error with recovery
+PASS Receipt revert is reported
+PASS Quote expiry blocks transaction
+PASS Desktop and mobile reflow, keyboard focus, reduced motion and accessibility
+PASS No failed static resources or uncaught browser errors
+PASS Keyboard-only wallet connection, chain switch and quote form
+PASS ABI tampering stops configuration loading
+28 checks passed; 5 mocked transactions; no broadcasts.

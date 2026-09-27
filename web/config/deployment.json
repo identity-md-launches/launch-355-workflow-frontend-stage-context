@@ -1,0 +1,55 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-275-loyaltytierhook",
+  "version": 1,
+  "launchId": "a9c431b4-53b9-4eba-b85a-e287fc9e784e",
+  "manifest": {
+    "hook": {
+      "contract": "LoyaltyTierHook",
+      "permissions": [
+        "beforeSwap",
+        "afterSwap",
+        "beforeSwapReturnDelta",
+        "afterSwapReturnDelta"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "792281625142643375935439503360000",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia native ETH/TIER pool: currency0 is native ETH and currency1 is TIER. initialPrice is decimal sqrtPriceX96, equal to 10000 * 2^96, representing 100000000 TIER per ETH with 18 decimals on both sides. This matches test/helpers/LaunchParameters.sol and the local factory-shaped one-sided TIER seed rehearsal, including both first-buy modes into an ETH-less pool. The pool LP fee is 3000 pips (0.3%), separate from the hook fee. LoyaltyTierHook takes only the approved Sepolia PoolManager address; TIER takes no constructor arguments. The four permissions give address mask 0x00cc; all other permissions are false and the constructor validates them. Lifetime ETH-leg volume is uint128 per pool and identity. Fees use pre-swap volume: 100 bps below 0.01 ETH, 75 bps from 0.01 ETH, 50 bps from 0.1 ETH and 25 bps from 1 ETH, with inclusive thresholds. ETH-specified swaps return a positive specified fee delta in beforeSwap; ETH-unspecified swaps return a positive unspecified fee delta in afterSwap. Fees round down, specified amounts are honored exactly and partial fills revert. Identity requires exactly 32 canonical ABI bytes encoding a nonzero address equal to tx.origin; otherwise the swap pays 100 bps and adds no volume. hookData is unauthenticated; the origin check only confirms a pricing claim. Relayed or bundled smart-contract wallets naming their wallet address earn no discount. Non-native currency0 pools receive zero hook deltas and no volume updates. Swap callbacks mint ERC-6909 ETH claims without transferring ETH. Permissionless burnFees burns all claims before taking ETH to 0x000000000000000000000000000000000000dEaD. Callbacks require the configured PoolManager; the hook has no admin or mutable rates. Views expose volume, tier, fee and next threshold; VolumeAdded reports the updated tier. This is a technical manifest; deployment policy and signed artifact linkage belong to services. Local rehearsal does not establish production-factory equivalence, independent review, admission or deployment. Tiers is a Sepolia test toy with no value or promised return.",
+    "token": {
+      "name": "Tiers",
+      "symbol": "TIER",
+      "contract": "TIER",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "TIER",
+      "txHash": "0x1dec1ee3b5e6d10e4da894ff81512728a2a73c986a4a6dba2ee54feea9b11a33",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xb0d54e89c5a7888446c1ab93f12ace3054c847c7",
+      "blockNumber": 11791391,
+      "creationCodeHash": "d158d857622db38f0082e8b390d6664fe2610c0ede5993cf1477778ae7dd4846"
+    },
+    {
+      "name": "LoyaltyTierHook",
+      "txHash": "0x1dec1ee3b5e6d10e4da894ff81512728a2a73c986a4a6dba2ee54feea9b11a33",
+      "abiHash": "2b055d178e44e04a5eade61e4ea7f490d295c2d2b98190a3d2dec78fa7d4d7d9",
+      "address": "0xe76584b68c415026026e9fb4e5034be3f96000cc",
+      "blockNumber": 11791391,
+      "creationCodeHash": "21bc6e2ad1da714bf6762be11567a174b8b02a67f7be674d3519ce30b0a6214d"
+    }
+  ],
+  "sourceCommit": "fb1d145d61b1c427f180f852ba60ddab5840e44f",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "0154fa17929c9ef4af10984ad7af673bd84562d4da189579527c69da489f1f32"
+}
